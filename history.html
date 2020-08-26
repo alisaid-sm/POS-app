@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/history.css">
+    <title>history</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center app-header">
+            <div class="col-md-1 col-2 d-flex">
+                <img src="assets/img/menu (1).png" alt="" class="img-responsive img-fluid ml-3 ">
+            </div>
+            <div class="col-md-11 col-10 d-flex justify-content-center">
+                <p class="font-weight-bold h2">History</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-sm-2 col-12 text-center app-sidebar">
+                <img src="assets/img/fork.png" alt=""
+                    class="img-responsive img-fluid d-inline-block d-sm-flex justify-content-center mt-3 mt-sm-5 mb-3 mr-4 mr-sm-0 ml-4 ml-sm-3">
+                <img src="assets/img/clipboard.png" alt=""
+                    class="img-responsive img-fluid d-inline-block d-sm-flex justify-content-center mt-3 mt-sm-5 mb-3 mr-4 mr-sm-0 ml-0 ml-sm-3">
+                <img src="assets/img/add.png" alt=""
+                    class="img-responsive img-fluid d-inline-block d-sm-flex justify-content-center mt-3 mt-sm-5 mb-3 mr-4 mr-sm-0 ml-0 ml-sm-3">
+            </div>
+            <div class="col-md-11 col-sm-10">
+                <div class="row mt-2 mt-sm-3 mb-3">
+                    <div class="col-md-4 mb-lg-0 mb-3">
+                        <div class="w-100 db1 position-relative">
+                            <div class="circle11 position-absolute"></div>
+                            <div class="circle12 position-absolute"></div>
+                            <div class="circle13 position-absolute"></div>
+                            <div class="row d-flex h-100 align-items-center">
+                                <div class="col-12 pl-5">
+                                    <p class="font-weight-bold h6">Today’s Income</p>
+                                    <p class="font-weight-bold h2">Rp. 1.000.000</p>
+                                    <p class="font-weight-bold h6">+2% Yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-lg-0 mb-3">
+                        <div class="w-100 db2 position-relative">
+                            <div class="circle21 position-absolute"></div>
+                            <div class="circle22 position-absolute"></div>
+                            <div class="circle23 position-absolute"></div>
+                            <div class="row d-flex h-100 align-items-center">
+                                <div class="col-12 pl-5">
+                                    <p class="font-weight-bold h6">Orders</p>
+                                    <p class="font-weight-bold h2">3.270</p>
+                                    <p class="font-weight-bold h6">+5% Last Week</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-lg-0 mb-3">
+                        <div class="w-100 db3 position-relative">
+                            <div class="circle31 position-absolute"></div>
+                            <div class="circle32 position-absolute"></div>
+                            <div class="circle33 position-absolute"></div>
+                            <div class="row d-flex h-100 align-items-center">
+                                <div class="col-12 pl-5">
+                                    <p class="font-weight-bold h6">This Year’s Income</p>
+                                    <p class="font-weight-bold h2">Rp. 100.000.000.000</p>
+                                    <p class="font-weight-bold h6">+10% Last Year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow col-12 img-fluid app-chart m-3">
+                        <p class="font-weight-bold h2 mt-3 float-left">Revenue</p>
+                        <div class="dropdown float-right mt-3 mr-3">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Month
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <canvas id="myChart"></canvas>
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                        <script>
+                            var ctx = document.getElementById('myChart').getContext('2d');
+                            var dataFirst = {
+                                label: "This Month",
+                                data: [0, 10, 20, 10, 20, 10, 20, 15, 20, 5, 17, 20],
+                                lineTension: 0.3,
+                                borderColor: 'lightblue',
+                                fill: false
+                            };
+
+                            var dataSecond = {
+                                label: "Last Month",
+                                data: [10, 5, 10, 20, 15, 19, 7, 9, 10, 20, 10, 10],
+                                borderColor: 'pink',
+                                fill: false
+                            };
+
+                            var speedData = {
+                                labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"],
+                                datasets: [dataFirst, dataSecond]
+                            };
+
+
+                            var lineChart = new Chart(ctx, {
+                                type: 'line',
+                                data: speedData
+                            });
+                        </script>
+                    </div>
+                    <div class="shadow col-12 m-3">
+                        <p class="font-weight-bold h2 mt-3 float-left">Recent Order</p>
+                        <div class="dropdown float-right mt-3 mr-3">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Today
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">INVOICES</th>
+                                    <th scope="col">CASHIER</th>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">ORDERS</th>
+                                    <th scope="col">AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">#10928</th>
+                                    <td>Cashier 1</td>
+                                    <td>06 October 2019</td>
+                                    <td>Ice Tea, Salad With peanut sauce</td>
+                                    <td>Rp. 120.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#10928</th>
+                                    <td>Cashier 1</td>
+                                    <td>06 October 2019</td>
+                                    <td>Ice Tea, Salad With peanut sauce</td>
+                                    <td>Rp. 120.000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#10928</th>
+                                    <td>Cashier 1</td>
+                                    <td>06 October 2019</td>
+                                    <td>Ice Tea, Salad With peanut sauce</td>
+                                    <td>Rp. 120.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

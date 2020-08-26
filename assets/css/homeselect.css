@@ -1,0 +1,157 @@
+@font-face{
+    font-family: 'AirbnbCerealBook';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/AirbnbCerealBook.woff')
+    format('woff');
+}
+body{
+    font-family: 'AirbnbCerealBook';
+}
+.container-fluid{
+    height: 1024px;
+}
+.app-header{
+    /* position: absolute; */
+    /* width: 900px; */
+    height: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    /* left: 0px;
+    top: 6px; */
+
+}
+.app-header-right{
+    /* position: absolute; */
+    /* width: 491px; */
+    height: 80px;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    /* left: -10px;
+    top: 0px; */
+
+}
+.app-sidebar{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.app-sidebar-right{
+    position: relative;
+    border: 1px solid #CECECE;
+}
+.icon-empty{
+    margin-top : 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.number-cart{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    background: #57CAD5;
+    border-radius: 100%;
+}
+.text-please{
+    color: #CECECE;
+}
+.text-empty{
+    margin-top: -30px;
+}
+.text-price{
+    margin-top: -5px;
+}
+.content{
+    background: rgba(190, 195, 202, 0.3);
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.content1{
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 24px;
+}
+.select{
+    position: relative;
+}
+.select::after{
+    content: url('../img/tick (1).png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 7px 7px 0px 0px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.checkout{
+    position: absolute;
+    /* top: 508px; */
+    bottom: 0px;
+    right: 16px;
+    left: 16px;
+}
+.button-checkout{
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background-color: #57CAD5;
+    border-radius: 0px;
+    border: 0px;
+}
+.button-checkout:hover{
+    background-color: #29b2be;
+}
+.button-checkout:active{
+    background-color: #29b2be;
+}
+.button-cancel{
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background-color: #F24F8A;
+    border-radius: 0px;
+    border: 0px;
+}
+.button-cancel:hover{
+    background-color: #c4245f;
+}
+.button-cancel:active{
+    background-color: #c4245f;
+}
+.min-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #82DE3A;
+    background: rgba(130, 222, 58, 0.2);
+    border: 1px solid #82DE3A;
+    box-sizing: border-box;
+}
+.plus-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #82DE3A;
+    background: rgba(130, 222, 58, 0.2);
+    border: 1px solid #82DE3A;
+    box-sizing: border-box;
+
+}
+.num-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #82DE3A;
+    background: #FFFFFF;
+    border: 1px solid #82DE3A;
+    box-sizing: border-box;
+}
+.image-cart{
+    padding: 1% 0%;
+}
