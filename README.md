@@ -16,11 +16,15 @@ Di dalam desain ini terdapat 5 halaman
 ## link netlify
 Home
 https://posappalisaid.netlify.app/
+
 Home Select
 https://posappalisaid.netlify.app/homeselect
+
 Modal Checkout
 https://posappalisaid.netlify.app/checkout
+
 Modal Adddata
 https://posappalisaid.netlify.app/adddata
+
 History
 https://posappalisaid.netlify.app/history
