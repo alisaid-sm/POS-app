@@ -9,10 +9,15 @@ Bootstrap adalah sebuah framework CSS yang telah dibuat khusus untuk mengembangk
 
 Di dalam desain ini terdapat 5 halaman
 1. Home
+![image](https://user-images.githubusercontent.com/68319083/93113356-4989d400-f6e3-11ea-849e-58cb2b3c92b3.png)
 2. Home Select
+![image](https://user-images.githubusercontent.com/68319083/93113659-aab1a780-f6e3-11ea-8337-c4a15c386a64.png)
 3. Modal Checkout
+![image](https://user-images.githubusercontent.com/68319083/93113752-d16fde00-f6e3-11ea-8128-dfaaa62819e7.png)
 4. Modal Adddata
+![image](https://user-images.githubusercontent.com/68319083/93113477-6f16dd80-f6e3-11ea-8c84-30efad2a9c84.png)
 5. History
+![image](https://user-images.githubusercontent.com/68319083/93113797-e77d9e80-f6e3-11ea-8aaa-8f1b70533657.png)
 ## link netlify
 Home
 https://posappalisaid.netlify.app/
